@@ -101,11 +101,7 @@ class Platformer extends Phaser.Scene {
 
         this.rKey = this.input.keyboard.addKey('R');
 
-        // debug key listener (assigned to D key)
-        this.input.keyboard.on('keydown-D', () => {
-            this.physics.world.drawDebug = this.physics.world.drawDebug ? false : true
-            this.physics.world.debugGraphic.clear()
-        }, this);
+       
 
         // TODO: Add movement vfx here
         // movement vfx
